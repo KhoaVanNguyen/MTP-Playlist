@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D2F2EE0C1D5C6AC4000644C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2EE0B1D5C6AC4000644C1 /* AppDelegate.swift */; };
-		D2F2EE0E1D5C6AC4000644C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2EE0D1D5C6AC4000644C1 /* ViewController.swift */; };
+		D2F2EE0E1D5C6AC4000644C1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2EE0D1D5C6AC4000644C1 /* MainVC.swift */; };
 		D2F2EE111D5C6AC4000644C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F2EE0F1D5C6AC4000644C1 /* Main.storyboard */; };
 		D2F2EE131D5C6AC4000644C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F2EE121D5C6AC4000644C1 /* Assets.xcassets */; };
 		D2F2EE161D5C6AC4000644C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F2EE141D5C6AC4000644C1 /* LaunchScreen.storyboard */; };
 		D2F2EE211D5C6AC4000644C1 /* MtpPlaylistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2EE201D5C6AC4000644C1 /* MtpPlaylistTests.swift */; };
 		D2F2EE2C1D5C6AC4000644C1 /* MtpPlaylistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2EE2B1D5C6AC4000644C1 /* MtpPlaylistUITests.swift */; };
+		D2F431931D5C7DB1009DD6DF /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F431921D5C7DB1009DD6DF /* Video.swift */; };
+		D2F431951D5C7F2A009DD6DF /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F431941D5C7F2A009DD6DF /* VideoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		D2F2EE081D5C6AC4000644C1 /* MtpPlaylist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MtpPlaylist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F2EE0B1D5C6AC4000644C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2F2EE0D1D5C6AC4000644C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2F2EE0D1D5C6AC4000644C1 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		D2F2EE101D5C6AC4000644C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2F2EE121D5C6AC4000644C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2F2EE151D5C6AC4000644C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		D2F2EE271D5C6AC4000644C1 /* MtpPlaylistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MtpPlaylistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F2EE2B1D5C6AC4000644C1 /* MtpPlaylistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MtpPlaylistUITests.swift; sourceTree = "<group>"; };
 		D2F2EE2D1D5C6AC4000644C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F431921D5C7DB1009DD6DF /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		D2F431941D5C7F2A009DD6DF /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		D2F2EE0A1D5C6AC4000644C1 /* MtpPlaylist */ = {
 			isa = PBXGroup;
 			children = (
+				D2F431911D5C7DA1009DD6DF /* View */,
+				D2F431901D5C7D9C009DD6DF /* Model */,
+				D2F4318F1D5C7D94009DD6DF /* Controller */,
 				D2F2EE0B1D5C6AC4000644C1 /* AppDelegate.swift */,
-				D2F2EE0D1D5C6AC4000644C1 /* ViewController.swift */,
 				D2F2EE0F1D5C6AC4000644C1 /* Main.storyboard */,
 				D2F2EE121D5C6AC4000644C1 /* Assets.xcassets */,
 				D2F2EE141D5C6AC4000644C1 /* LaunchScreen.storyboard */,
@@ -123,6 +129,30 @@
 				D2F2EE2D1D5C6AC4000644C1 /* Info.plist */,
 			);
 			path = MtpPlaylistUITests;
+			sourceTree = "<group>";
+		};
+		D2F4318F1D5C7D94009DD6DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2F2EE0D1D5C6AC4000644C1 /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D2F431901D5C7D9C009DD6DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2F431921D5C7DB1009DD6DF /* Video.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D2F431911D5C7DA1009DD6DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2F431941D5C7F2A009DD6DF /* VideoCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2F2EE0E1D5C6AC4000644C1 /* ViewController.swift in Sources */,
+				D2F2EE0E1D5C6AC4000644C1 /* MainVC.swift in Sources */,
+				D2F431951D5C7F2A009DD6DF /* VideoCell.swift in Sources */,
+				D2F431931D5C7DB1009DD6DF /* Video.swift in Sources */,
 				D2F2EE0C1D5C6AC4000644C1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +542,7 @@
 				D2F2EE321D5C6AC4000644C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2F2EE331D5C6AC4000644C1 /* Build configuration list for PBXNativeTarget "MtpPlaylistTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +551,7 @@
 				D2F2EE351D5C6AC4000644C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2F2EE361D5C6AC4000644C1 /* Build configuration list for PBXNativeTarget "MtpPlaylistUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +560,7 @@
 				D2F2EE381D5C6AC4000644C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
