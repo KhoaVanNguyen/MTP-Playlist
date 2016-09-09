@@ -47,14 +47,14 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "DetailVC", sender: "NIVIKI.COM YOUTUBE")
+        performSegue(withIdentifier: "DetailVC", sender: videos[indexPath.row])
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        // unwrap optional swift
         if let detailVC = segue.destination as? DetailVC{
-            if let musicName = sender as? String{
-                detailVC.musicText = musicName
+            if let musicVideo = sender as? Video{
+                detailVC.musicVideo = musicVideo
             }
         }
        

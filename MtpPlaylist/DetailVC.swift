@@ -9,14 +9,29 @@
 import UIKit
 
 class DetailVC: UIViewController {
-
-    @IBOutlet weak var musicName: UILabel!
-    var musicText : String = "Not found"
+    
+    @IBOutlet weak var webView : UIWebView!
+    @IBOutlet weak var musicNamLbl : UILabel!
+    private var _musicVideo : Video!
+    
+    var  musicVideo : Video{
+       
+        get {
+            if _musicVideo == nil{
+                return Video(songName: "", previewImage: "", url: "")
+            }
+            return _musicVideo
+        }
+        set {
+            _musicVideo = newValue
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        musicName.text = musicText
-
+        musicNamLbl.text = musicVideo.songName
+        webView.loadHTMLString(musicVideo.url, baseURL: nil)
         // Do any additional setup after loading the view.
     }
 

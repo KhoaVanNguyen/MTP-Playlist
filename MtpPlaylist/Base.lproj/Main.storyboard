@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -122,27 +121,37 @@
                                     <constraint firstItem="aMI-uv-EdU" firstAttribute="top" secondItem="bG1-hA-HBa" secondAttribute="top" constant="10" id="sLS-5K-pJX"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QmI-OL-Kva">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rc-Oj-fS5">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Mmt-v2-WXs"/>
+                                    <constraint firstAttribute="width" constant="300" id="FPD-tn-TDy"/>
+                                    <constraint firstAttribute="height" constant="30" id="jIu-pt-Snc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFa-AV-dew">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="OMg-bi-SQw"/>
+                                </constraints>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bG1-hA-HBa" firstAttribute="top" secondItem="gYj-6h-VDN" secondAttribute="top" id="3pG-xr-KWO"/>
-                            <constraint firstItem="QmI-OL-Kva" firstAttribute="top" secondItem="bG1-hA-HBa" secondAttribute="bottom" constant="50" id="K4s-qL-exc"/>
+                            <constraint firstItem="3rc-Oj-fS5" firstAttribute="centerX" secondItem="gYj-6h-VDN" secondAttribute="centerX" id="AeE-Q4-4Rb"/>
+                            <constraint firstItem="dFa-AV-dew" firstAttribute="leading" secondItem="gYj-6h-VDN" secondAttribute="leading" id="W6G-me-bfu"/>
+                            <constraint firstAttribute="trailing" secondItem="dFa-AV-dew" secondAttribute="trailing" id="eQf-4A-FlX"/>
                             <constraint firstAttribute="trailing" secondItem="bG1-hA-HBa" secondAttribute="trailing" id="ool-XE-krC"/>
                             <constraint firstItem="bG1-hA-HBa" firstAttribute="leading" secondItem="gYj-6h-VDN" secondAttribute="leading" id="taZ-6t-6sX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="QmI-OL-Kva" secondAttribute="trailing" constant="20" id="xro-qu-DIO"/>
-                            <constraint firstItem="QmI-OL-Kva" firstAttribute="leading" secondItem="gYj-6h-VDN" secondAttribute="leadingMargin" constant="20" id="yqW-5P-ZYo"/>
+                            <constraint firstItem="3rc-Oj-fS5" firstAttribute="top" secondItem="dFa-AV-dew" secondAttribute="bottom" constant="30" id="uYO-zz-RXG"/>
+                            <constraint firstItem="dFa-AV-dew" firstAttribute="top" secondItem="bG1-hA-HBa" secondAttribute="bottom" id="vRP-Wt-84o"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="musicName" destination="QmI-OL-Kva" id="Aph-KO-WIc"/>
+                        <outlet property="musicNamLbl" destination="3rc-Oj-fS5" id="CkB-Qm-iVy"/>
+                        <outlet property="webView" destination="dFa-AV-dew" id="Yca-3B-Gd9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UJL-He-TY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
