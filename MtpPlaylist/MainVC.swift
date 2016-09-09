@@ -46,6 +46,19 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "DetailVC", sender: "NIVIKI.COM YOUTUBE")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       // unwrap optional swift
+        if let detailVC = segue.destination as? DetailVC{
+            if let musicName = sender as? String{
+                detailVC.musicText = musicName
+            }
+        }
+       
+    }
     func addDataToVideoArray()
     {
         let video1 = Video(songName: "Nắm ấm xa dần", previewImage: "image1", url: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/x-UEksXSLGs\" frameborder=\"0\" allowfullscreen></iframe>")
@@ -54,6 +67,10 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
          let video4 = Video(songName: "Chúng ta không thuộc về nhau", previewImage: "image4", url: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/x-UEksXSLGs\" frameborder=\"0\" allowfullscreen></iframe>")
         
         videos.append(contentsOf: [video1,video2,video3,video4])
+        
+    }
+
+    @IBAction func nextScreenBtn(_ sender: AnyObject) {
         
     }
 }

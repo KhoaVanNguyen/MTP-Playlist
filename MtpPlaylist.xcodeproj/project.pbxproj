@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D201BF4C1D82E88600DD35C7 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D201BF4B1D82E88600DD35C7 /* DetailVC.swift */; };
 		D2F2EE0C1D5C6AC4000644C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2EE0B1D5C6AC4000644C1 /* AppDelegate.swift */; };
 		D2F2EE0E1D5C6AC4000644C1 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F2EE0D1D5C6AC4000644C1 /* MainVC.swift */; };
 		D2F2EE111D5C6AC4000644C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F2EE0F1D5C6AC4000644C1 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D201BF4B1D82E88600DD35C7 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		D2F2EE081D5C6AC4000644C1 /* MtpPlaylist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MtpPlaylist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F2EE0B1D5C6AC4000644C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2F2EE0D1D5C6AC4000644C1 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				D2F2EE0D1D5C6AC4000644C1 /* MainVC.swift */,
+				D201BF4B1D82E88600DD35C7 /* DetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D201BF4C1D82E88600DD35C7 /* DetailVC.swift in Sources */,
 				D2F2EE0E1D5C6AC4000644C1 /* MainVC.swift in Sources */,
 				D2F431951D5C7F2A009DD6DF /* VideoCell.swift in Sources */,
 				D2F431931D5C7DB1009DD6DF /* Video.swift in Sources */,
